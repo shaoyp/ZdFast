@@ -40,50 +40,50 @@ public class MenuManager {
 	private static Menu getMenu() {
 		CommonButton btn11 = new CommonButton();
 		btn11.setName(WeiXinConstant.MENU1_CHILDREN1_NAME);
-		btn11.setType(WeiXinConstant.MENU_TYPE);
+		btn11.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn11.setKey(WeiXinConstant.MENU1_CHILDREN1_KEY);
 		btn11.setUrl(WeiXinConstant.MENU1_CHILDREN1_URL);
 
 		CommonButton btn12 = new CommonButton();
 		btn12.setName(WeiXinConstant.MENU1_CHILDREN2_NAME);
-		btn12.setType(WeiXinConstant.MENU_TYPE);
+		btn12.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn12.setKey(WeiXinConstant.MENU1_CHILDREN2_KEY);
 		btn12.setUrl(WeiXinConstant.MENU1_CHILDREN2_URL);
 
 		CommonButton btn13 = new CommonButton();
 		btn13.setName(WeiXinConstant.MENU1_CHILDREN3_NAME);
-		btn13.setType(WeiXinConstant.MENU_TYPE);
+		btn13.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn13.setKey(WeiXinConstant.MENU1_CHILDREN3_KEY);
 		btn13.setUrl(WeiXinConstant.MENU1_CHILDREN3_URL);
 
 		CommonButton btn14 = new CommonButton();
 		btn14.setName(WeiXinConstant.MENU1_CHILDREN4_NAME);
-		btn14.setType(WeiXinConstant.MENU_TYPE);
+		btn14.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn14.setKey(WeiXinConstant.MENU1_CHILDREN4_KEY);
 		btn14.setUrl(WeiXinConstant.MENU1_CHILDREN4_URL);
 
 		CommonButton btn15 = new CommonButton();
 		btn15.setName(WeiXinConstant.MENU1_CHILDREN5_NAME);
-		btn15.setType(WeiXinConstant.MENU_TYPE);
+		btn15.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn15.setKey(WeiXinConstant.MENU1_CHILDREN5_KEY);
 		btn15.setUrl(WeiXinConstant.MENU1_CHILDREN5_URL);
 		
 		
 		CommonButton btn21 = new CommonButton();
 		btn21.setName(WeiXinConstant.MENU2_CHILDREN1_NAME);
-		btn21.setType(WeiXinConstant.MENU_TYPE);
+		btn21.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn21.setKey(WeiXinConstant.MENU2_CHILDREN1_KEY);
 		btn21.setUrl(WeiXinConstant.MENU2_CHILDREN1_URL);
 
 		CommonButton btn22 = new CommonButton();
 		btn22.setName(WeiXinConstant.MENU2_CHILDREN2_NAME);
-		btn22.setType(WeiXinConstant.MENU_TYPE);
+		btn22.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn22.setKey(WeiXinConstant.MENU2_CHILDREN2_KEY);
 		btn22.setUrl(WeiXinConstant.MENU2_CHILDREN2_URL);
 
 		CommonButton btn23 = new CommonButton();
 		btn23.setName(WeiXinConstant.MENU2_CHILDREN3_NAME);
-		btn23.setType(WeiXinConstant.MENU_TYPE);
+		btn23.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn23.setKey(WeiXinConstant.MENU2_CHILDREN3_KEY);
 		btn23.setUrl(WeiXinConstant.MENU2_CHILDREN3_URL);
 /*
@@ -105,19 +105,19 @@ public class MenuManager {
 
 		CommonButton btn32 = new CommonButton();
 		btn32.setName(WeiXinConstant.MENU3_CHILDREN2_NAME);
-		btn32.setType(WeiXinConstant.MENU_TYPE);
+		btn32.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn32.setKey(WeiXinConstant.MENU3_CHILDREN2_KEY);
 		btn32.setUrl(WeiXinConstant.MENU3_CHILDREN2_URL);
 
 		CommonButton btn33 = new CommonButton();
 		btn33.setName(WeiXinConstant.MENU3_CHILDREN3_NAME);
-		btn33.setType(WeiXinConstant.MENU_TYPE);
+		btn33.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn33.setKey(WeiXinConstant.MENU3_CHILDREN3_KEY);
 		btn33.setUrl(WeiXinConstant.MENU3_CHILDREN3_URL);
 
 		CommonButton btn34 = new CommonButton();
 		btn34.setName(WeiXinConstant.MENU3_CHILDREN4_NAME);
-		btn34.setType(WeiXinConstant.MENU_TYPE);
+		btn34.setType(WeiXinConstant.MENU_TYPE_VIEW);
 		//btn34.setKey(WeiXinConstant.MENU3_CHILDREN4_KEY);
 		btn34.setUrl(WeiXinConstant.MENU3_CHILDREN4_URL);
 		
