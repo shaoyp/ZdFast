@@ -44,7 +44,7 @@ public class WeiXinConstant {
 	// 第一个一级菜单 第一个子编码 名字
 	public final static String MENU1_CHILDREN1_KEY = "11";
 	// 第一个一级菜单 第一个子菜单 URL
-	public final static String MENU1_CHILDREN1_URL = "";
+	public final static String MENU1_CHILDREN1_URL = "http://182.92.186.155/ZdFast/userReviews.jsp";
 	// 第一个一级菜单 第二个子菜单 名字
 	public final static String MENU1_CHILDREN2_NAME = "上岗通展示";
 	// 第一个一级菜单 第二个子编码 名字

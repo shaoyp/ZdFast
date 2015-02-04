@@ -4,7 +4,7 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 
-import com.zdaq.fastWx.event.Menu1Children1;
+import com.zdaq.fastWx.event.Menu3Children1;
 import com.zdaq.fastWx.message.resp.TextMessage;
 import com.zdaq.fastWx.util.MessageUtil;
 import com.zdaq.fastWx.util.WeiXinConstant;
@@ -33,7 +33,7 @@ public class EventContent extends BaseContent{
 /*		KeFuMessage keFuMessage = null;
 		TransInfo transInfo = null;*/
 		if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {
-			respContent = "谢谢您的关注-！";
+			respContent = "感谢您关注上岗通公众平台-！";
 			textMessage = getTextContent(requestMap, respContent);
 			respMessage = MessageUtil.textMessageToXml(textMessage);
 		}
@@ -45,13 +45,11 @@ public class EventContent extends BaseContent{
 		}
 		// 自定义菜单点击事件
 		else if (eventType.equals(MessageUtil.EVENT_TYPE_CLICK)) {
-			//点击第一个菜单中的第一项
-			if(eventKey.equals(WeiXinConstant.MENU1_CHILDREN1_KEY)){
-				Menu1Children1 menu = new Menu1Children1();
+			//点击第三个菜单中的第一项 
+			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN1_KEY)){
+				Menu3Children1 menu = new Menu3Children1();
 				respMessage = menu.getContent(requestMap);
-				
 			}
-			//点击第一个菜单中的第二项
 		}
 		return respMessage;
 	}
@@ -61,7 +59,7 @@ public class EventContent extends BaseContent{
 			requestMap.put("ToUserName","shao");
 			requestMap.put("MsgType","text");
 			requestMap.put("Event","CLICK");
-			requestMap.put("EventKey","11");
+			requestMap.put("EventKey","31");
 			EventContent eventContent = new EventContent();
 			System.out.println("输出：");
 			System.out.println( eventContent.getContent(requestMap));
