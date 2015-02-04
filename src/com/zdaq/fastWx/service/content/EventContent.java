@@ -4,9 +4,8 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 
-import com.zdaq.fastWx.message.resp.KeFuMessage;
+import com.zdaq.fastWx.event.Menu1Children1;
 import com.zdaq.fastWx.message.resp.TextMessage;
-import com.zdaq.fastWx.message.resp.TransInfo;
 import com.zdaq.fastWx.util.MessageUtil;
 import com.zdaq.fastWx.util.WeiXinConstant;
 
@@ -31,8 +30,8 @@ public class EventContent extends BaseContent{
 		//文本
 		TextMessage textMessage = null;
 		//多客服
-		KeFuMessage keFuMessage = null;
-		TransInfo transInfo = null;
+/*		KeFuMessage keFuMessage = null;
+		TransInfo transInfo = null;*/
 		if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {
 			respContent = "谢谢您的关注-！";
 			textMessage = getTextContent(requestMap, respContent);
@@ -46,31 +45,13 @@ public class EventContent extends BaseContent{
 		}
 		// 自定义菜单点击事件
 		else if (eventType.equals(MessageUtil.EVENT_TYPE_CLICK)) {
+			//点击第一个菜单中的第一项
 			if(eventKey.equals(WeiXinConstant.MENU1_CHILDREN1_KEY)){
-				respContent = "您点击了"+WeiXinConstant.MENU1_CHILDREN1_NAME;
-				textMessage = getTextContent(requestMap, respContent);
-				respMessage = MessageUtil.textMessageToXml(textMessage);
-			}
-			if(eventKey.equals(WeiXinConstant.MENU2_CHILDREN1_KEY)){
-				respContent = "您点击了"+WeiXinConstant.MENU2_CHILDREN1_NAME;
-				textMessage = getTextContent(requestMap, respContent);
-				respMessage = MessageUtil.textMessageToXml(textMessage);
-			}
-			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN1_KEY)){
-				keFuMessage = new KeFuMessage();
-			}
-			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN1_KEY)){
-				keFuMessage = getKeFuContent(requestMap, transInfo);
-				respMessage = MessageUtil.keFuMessageToXml(keFuMessage);
-			}
-			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN2_KEY)){
-				keFuMessage = new KeFuMessage();
-				transInfo = new TransInfo();
-				transInfo.setKfAccount("zdaqkf3@zdaqkj");
-				keFuMessage = getKeFuContent(requestMap, transInfo);
-				respMessage = MessageUtil.keFuMessageToXml(keFuMessage);
+				Menu1Children1 menu = new Menu1Children1();
+				respMessage = menu.getContent(requestMap);
 				
 			}
+			//点击第一个菜单中的第二项
 		}
 		return respMessage;
 	}
@@ -80,7 +61,7 @@ public class EventContent extends BaseContent{
 			requestMap.put("ToUserName","shao");
 			requestMap.put("MsgType","text");
 			requestMap.put("Event","CLICK");
-			requestMap.put("EventKey","32");
+			requestMap.put("EventKey","11");
 			EventContent eventContent = new EventContent();
 			System.out.println("输出：");
 			System.out.println( eventContent.getContent(requestMap));
