@@ -16,7 +16,7 @@ import com.zdaq.fastWx.message.resp.TransInfo;
 import com.zdaq.fastWx.util.MessageUtil;
 
 
-abstract class BaseContent {
+public abstract class BaseContent {
 	/**
 	 * 回复基类
 	 * 
