@@ -14,51 +14,56 @@
 
 </head>
 <body>
-	 <div class="app_div " style="overflow: ">
+	 <div class="app_div " >
 	 	<div class="app_download">
-	 		<font>点击下载上岗通APP</font>
+	 		<a href=""><font class="font_download">点击下载上岗通APP</font></a>
 	 	</div>
 	 	<div class="app_content">
 	 		<div>
-	 			<p>此处是描述</p>
+	 			<p class="font_describe">
+	 				此处是描述<br/>
+	 				此处是描述<br/>
+	 				此处是描述<br/>
+	 			
+	 			</p>
 	 		</div>
-	 		<hr class="app_hr"/>
-	 		<span>∨</span>
+	 		<hr class="app_hr" size="2"/>
+	 		<div class="app_span">∨</div>
 	 		
 	 	</div>
 	 </div>
 	 <div class="app_div " >
 	 	<div class="app_content1">
-	 		<h1>设备在线</h1>
-	 		<p>描述</p>
+	 		<font class="font_app_title"><font class="font_color">&lt;</font>&nbsp;企业信息</font>
+	 		<p class="font_app_content">描述</p>
 	 	</div>
 	 	<img class="app_img " alt="" src="images/app/app1.png"/>
 	 </div>
 	 <div class="app_div ">
 	 	<div class="app_content2">
-	 		<h1>设备在线</h1>
-	 		<p>描述</p>
+	 		<font class="font_app_title">数据统计&nbsp;<font class="font_color">&gt;</font></font>
+	 		<p class="font_app_content">描述</p>
 	 	</div>
 	 	<img class="app_img " alt="" src="images/app/app2.png"/>
 	 </div>
 	 <div class="app_div ">
 	 	<div class="app_content3">
-	 		<h1>设备在线</h1>
-	 		<p>描述</p>
+	 		<font class="font_app_title"><font class="font_color">&lt;</font>&nbsp;设备在线</font>
+	 		<p class="font_app_content">描述</p>
 	 	</div>
 	 	<img class="app_img " alt="" src="images/app/app3.png"/>
 	 </div>
 	 <div class="app_div ">
 	 	<div class="app_content4">
-	 		<h1>设备在线</h1>
-	 		<p>描述</p>
+	 		<font class="font_app_title">酒精检测&nbsp;<font class="font_color">&gt;</font></font>
+	 		<p class="font_app_content">描述</p>
 	 	</div>
 	 	<img class="app_img " alt="" src="images/app/app4.png"/>
 	 </div>
 	 <div class="app_div ">
 	 	<div class="app_content5">
-	 		<h1>设备在线</h1>
-	 		<p>描述</p>
+	 		<font class="font_app_title"><font class="font_color">&lt;</font>&nbsp;心率检测</font>
+	 		<p class="font_app_content">描述</p>
 	 	</div>
 	 	<img class="app_img " alt="" src="images/app/app5.png"/>
 	 </div>

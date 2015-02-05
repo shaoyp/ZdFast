@@ -15,18 +15,31 @@
 </head>
 <body>
 	 <div class="pc_div " >
+	 		<div class="pc_content">
+	 		<div>
+	 			<p class="font_describe">
+	 				此处是描述<br/>
+	 				此处是描述<br/>
+	 				此处是描述<br/>
+	 			
+	 			</p>
+	 		</div>
+	 		<hr class="pc_hr" size="2"/>
+	 		<div class="pc_span">∨</div>
+	 		</div>
+	 
 	 </div>
-	 <div class="pc_div " >
+	 <div class="pc_div pc_top" >
 	 	<img class="pc_img " alt="" src="images/pc/pc1.png"/>
 	 </div>
 	 <div class="pc_div " >
-	 	<p>aaaaaa</p>
+	 	<p class="font_pc_content right">aaaaaa</p>
 	 </div>
-	 <div class="pc_div ">
+	 <div class="pc_div pc_top">
 	 	<img class="pc_img right" alt="" src="images/pc/pc2.png"/>
 	 </div>
-	  <div class="pc_div " >
-	 	<p>aaaaaa</p>
+	 <div class="pc_div " >
+	 	<p class="font_pc_content left">aaaaaa</p>
 	 </div>
 	<script src="js/jquery.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
