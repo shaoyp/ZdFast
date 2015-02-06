@@ -3,7 +3,12 @@
 <struts>
 	<constant name="struts.multipart.maxSize" value="2000000"/>
 	<package name="fastWeixin" namespace="/" extends="json-default">
+	    <!-- 微信入口 -->
 	    <action name="fastWx" class="com.zdaq.fastWx.action.MainAction" method="execute">
+	    </action>
+	    <!-- 意见建议 -->
+	    <action name="advise" class="com.zdaq.advise.action.AdviseAction" method="execute">
+	        <result>ok.jsp</result>
 	    </action>
 	</package>
 </struts>

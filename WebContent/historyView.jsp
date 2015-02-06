@@ -18,24 +18,24 @@
 	 	<div class="history_title">
 	 		<font class="font_history_title">历史消息</font>
 	 	</div>
+	 	<div class="history_content left" style="">
+	 		<div class="history_left left history_hide">
+	 			1.21321313213131231231231231231312312313
+	 		</div>
+	 		<div class="history_right right"><img alt="" src="images/common/right.png"></div>
+	 		
+	 	</div>
 	 	<div class="history_content left">
 	 		<div class="history_left left history_hide">
 	 			1.21321313213131231231231231231312312313
 	 		</div>
-	 		<div class="history_right right">&gt;</div>
-	 		
+	 		<div class="history_right right"><img alt="" src="images/common/right.png"></div>
 	 	</div>
-	 	<div class="history_content left" style="">
+	 	<div class="history_content left">
 	 		<div class="history_left left history_hide">
 	 			1.21321313213131231231231231231312312313
 	 		</div>
-	 		<div class="history_right right">&gt;</div>
-	 	</div>
-	 	<div class="history_content left" style="">
-	 		<div class="history_left left history_hide">
-	 			1.21321313213131231231231231231312312313
-	 		</div>
-	 		<div class="history_right right">&gt;</div>
+	 		<div class="history_right right"><img alt="" src="images/common/right.png"></div>
 	 	</div>
 	 		
 	 </div>
@@ -45,11 +45,11 @@
 	<script type="text/javascript">
 		$(function(){
  	 		$(".history_content").toggle(function(){
- 	 			$(this).children().siblings(".history_right").html("∨");
- 	 			$(this).children().siblings(".history_left").removeClass("history_hide").addClass("history_show");
+	 	 			$(this).children().siblings(".history_right").children("img").attr("src","images/common/down.png");
+	 	 			$(this).children().siblings(".history_left").removeClass("history_hide").addClass("history_show");
 			},function(){
-				$(this).children().siblings(".history_right").html("&gt;");
-				$(this).children().siblings(".history_left").removeClass("history_show").addClass("history_hide");
+					$(this).children().siblings(".history_right").children("img").attr("src","images/common/right.png");
+					$(this).children().siblings(".history_left").removeClass("history_show").addClass("history_hide");
 			}); 
 
 		});
