@@ -16,8 +16,11 @@
 <body>
 	<form action="advise.action" method="post" id="advise_form">
 	 <div class="advise_div " style="" >
+	 	<div class="advise_title">
+	 		<font class="font_orange_title">意见建议</font>
+	 	</div>
 	 	<div class="advise_content">
-	 	<textarea class="font_advise_content" id="advise_textarea" name="advise" >点击输入您的意见和建议</textarea>
+	 	<textarea class="font_textarea_content" id="advise_textarea" name="advise" >点击输入您的意见和建议</textarea>
 	 	</div>
 	 	<div class="advise_submit" style="">
 	 		<img class="advise_img right" id="advise_img" alt="" src="images/common/submit.jpg">

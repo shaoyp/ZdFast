@@ -16,8 +16,11 @@
 <body>
 	<form action="" method="post" id="advise_form">
 	 <div class="private_div " style="" >
+		<div class="private_title">
+	 		<font class="font_orange_title">私人订制</font>
+	 	</div>
 	 	<div class="private_content">
-	 	<textarea class="font_private_content" id="private_textarea" name="private" >点击输入您的的需求</textarea>
+	 	<textarea class="font_textarea_content" id="private_textarea" name="private" >请输入您的的需求</textarea>
 	 	</div>
 	 	<div class="private_submit" style="">
 	 		<img class="private_img right" id="private_img" alt="" src="images/common/submit.jpg">
@@ -43,7 +46,7 @@
 			//文本域获取焦点
 		   $("#private_textarea").focus(function cls() {
 		       var private_content = $(this).val();
-			   if (private_content == "点击输入您的意见和建议"){
+			   if (private_content == "请输入您的的需求"){
 				   $(this).val("");
 			   } 
 		    });

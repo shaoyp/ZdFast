@@ -16,7 +16,7 @@
 <body>
 	 <div class="history_div " >
 	 	<div class="history_title">
-	 		<font class="font_history_title">历史消息</font>
+	 		<font class="font_orange_title">历史消息</font>
 	 	</div>
 	 	<div class="history_content left" style="">
 	 		<div class="history_left left history_hide">
