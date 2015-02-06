@@ -1,12 +1,12 @@
 package com.zdaq.common.model;
 
 public class User {
-	private String id;
-	private String user_name;
-	private String user_open_id;
-	private String user_wx_number;
-	private String user_phone;
-	private String del_flg;
+	private String id; //用户id
+	private String user_name; //用户名字
+	private String user_open_id; //用户微信open_id码
+	private String user_wx_number; //用户微信号
+	private String user_phone; //用户电话
+	private String del_flg; //删除标记
 	public String getId() {
 		return id;
 	}

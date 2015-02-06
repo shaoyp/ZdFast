@@ -7,7 +7,7 @@
 	    <action name="fastWx" class="com.zdaq.fastWx.action.MainAction" method="execute">
 	    </action>
 	    <!-- 意见建议 -->
-	    <action name="advise" class="com.zdaq.advise.action.AdviseAction" method="execute">
+	    <action name="advise" class="com.zdaq.advise.action.AdviseAction" method="insertAdvise">
 	        <result>ok.jsp</result>
 	    </action>
 	</package>

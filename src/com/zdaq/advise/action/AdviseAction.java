@@ -9,8 +9,8 @@ public class AdviseAction {
 	private String advise;
 	private Map<String,Object> map = new HashMap<String,Object>();
 	private AdviseService service = new AdviseService();
-	public String execute(){
-			System.out.println("---------------action:"+advise);
+	public String insertAdvise(){
+			System.out.println("---------------advise action:"+advise);
 			map.put("advise", advise);
 			service.insert(map);
 		return "success";

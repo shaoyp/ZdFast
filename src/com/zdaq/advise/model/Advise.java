@@ -1,9 +1,9 @@
 package com.zdaq.advise.model;
 
 public class Advise {
-	private String id;
-	private String user_id;
-	private String advise;
+	private String id; //建议id
+	private String user_id; //用户id
+	private String advise; //建议内容
 	public String getId() {
 		return id;
 	}
