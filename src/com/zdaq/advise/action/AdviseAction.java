@@ -4,11 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.zdaq.advise.service.AdviseService;
+import com.zdaq.common.action.BaseAction;
 
-public class AdviseAction {
-	private String advise;
-	private Map<String,Object> map = new HashMap<String,Object>();
+public class AdviseAction extends BaseAction{
+	private static final long serialVersionUID = -7513329891384487766L;
+	private String advise; //建议意见信息
+	private Map<String,Object> map = new HashMap<String,Object>();  //接收参数
 	private AdviseService service = new AdviseService();
+	/**
+	 * 插入意见建议信息
+	 * 
+	 * */
 	public String insertAdvise(){
 			System.out.println("---------------advise action:"+advise);
 			map.put("advise", advise);

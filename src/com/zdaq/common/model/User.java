@@ -1,6 +1,13 @@
 package com.zdaq.common.model;
 
-public class User {
+import java.io.Serializable;
+
+/**
+ * 用户信息
+ * 
+ * */
+public class User implements Serializable{
+	private static final long serialVersionUID = -1043160684176922593L;
 	private String id; //用户id
 	private String user_name; //用户名字
 	private String user_open_id; //用户微信open_id码
