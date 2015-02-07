@@ -14,7 +14,6 @@ import com.zdaq.fastWx.util.MessageUtil;
 
 
 public class MainService {
-	final Logger logger = Logger.getLogger(MainService.class);
 	/**
 	 * 处理微信发来的请求
 	 * 
@@ -22,6 +21,7 @@ public class MainService {
 	 * @return
 	 */
 	public static String processRequest(HttpServletRequest request) {
+		final Logger logger = Logger.getLogger(MainService.class);
 		String respMessage = null;
 		try {
 			// 默认返回的文本消息内容
@@ -40,7 +40,7 @@ public class MainService {
 			// 消息类型
 			String msgContent = requestMap.get("Content");
 			System.out.println("----------------------weixinAction 处理请求-----------：发送账号："+fromUserName+",公众账号："+toUserName+",消息类型："+msgType+",消息内容："+msgContent);
-
+			logger.info("----------------------weixinAction 处理请求-----------：发送账号："+fromUserName+",公众账号："+toUserName+",消息类型："+msgType+",消息内容："+msgContent);
 			// 回复文本消息
 			TextMessage textMessage = new TextMessage();
 			textMessage.setToUserName(fromUserName);

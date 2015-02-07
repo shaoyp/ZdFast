@@ -5,6 +5,9 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 
 import com.zdaq.fastWx.event.Menu3Children1;
+import com.zdaq.fastWx.event.Menu3Children2;
+import com.zdaq.fastWx.event.Menu3Children3;
+import com.zdaq.fastWx.event.Menu3Children4;
 import com.zdaq.fastWx.message.resp.TextMessage;
 import com.zdaq.fastWx.util.MessageUtil;
 import com.zdaq.fastWx.util.WeiXinConstant;
@@ -48,6 +51,21 @@ public class EventContent extends BaseContent{
 			//点击第三个菜单中的第一项 
 			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN1_KEY)){
 				Menu3Children1 menu = new Menu3Children1();
+				respMessage = menu.getContent(requestMap);
+			}
+			//点击第三个菜单中的第二项 
+			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN2_KEY)){
+				Menu3Children2 menu = new Menu3Children2();
+				respMessage = menu.getContent(requestMap);
+			}
+			//点击第三个菜单中的第三项 
+			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN3_KEY)){
+				Menu3Children3 menu = new Menu3Children3();
+				respMessage = menu.getContent(requestMap);
+			}
+			//点击第三个菜单中的第四项 
+			if(eventKey.equals(WeiXinConstant.MENU3_CHILDREN4_KEY)){
+				Menu3Children4 menu = new Menu3Children4();
 				respMessage = menu.getContent(requestMap);
 			}
 		}

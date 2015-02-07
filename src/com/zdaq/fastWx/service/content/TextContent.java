@@ -7,10 +7,12 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 
 import com.zdaq.fastWx.message.resp.Article;
+import com.zdaq.fastWx.message.resp.KeFuMessage;
 import com.zdaq.fastWx.message.resp.Music;
 import com.zdaq.fastWx.message.resp.MusicMessage;
 import com.zdaq.fastWx.message.resp.NewsMessage;
 import com.zdaq.fastWx.message.resp.TextMessage;
+import com.zdaq.fastWx.message.resp.TransInfo;
 import com.zdaq.fastWx.util.MessageUtil;
 
 public class TextContent extends BaseContent{
@@ -39,6 +41,10 @@ public class TextContent extends BaseContent{
 		//音乐
 		MusicMessage musicMessage = null;
 		Music music = null;
+		//客服
+		KeFuMessage keFuMessage = null;
+		TransInfo transInfo = null;
+		
 		//-------------------回复文本内容开始--------------------------
 		if(msgContent.equals("定点发送")){
 			respContent = "该起床了";
@@ -46,15 +52,26 @@ public class TextContent extends BaseContent{
 			respMessage = MessageUtil.textMessageToXml(textMessage);
 			//logger.debug("-----------------回复文字消息："+respMessage);
 		}
-		if(msgContent.equals("文本")){
+		
+		else if (msgContent.equals("文本")){
 			respContent = "文本消息";
+			textMessage = getTextContent(requestMap, respContent);
+			respMessage = MessageUtil.textMessageToXml(textMessage);
+			//logger.debug("-----------------回复文字消息："+respMessage);
+		}
+		else if(msgContent.equals("openid")){
+			// 发送方帐号（open_id）
+			String fromUserName = requestMap.get("FromUserName");
+			// 公众帐号
+			String toUserName = requestMap.get("ToUserName"); 
+			respContent = "发送方账号：" + fromUserName + ",请求方账号：" + toUserName;
 			textMessage = getTextContent(requestMap, respContent);
 			respMessage = MessageUtil.textMessageToXml(textMessage);
 			//logger.debug("-----------------回复文字消息："+respMessage);
 		}
 		//-------------------回复文本内容结束--------------------------
 		//-------------------回复图文内容开始--------------------------
-		if(msgContent.equals("图文")){
+		else if(msgContent.equals("图文")){
 			articles =  new ArrayList<>();
 			article = new Article();
 			article.setTitle("图文标题1");
@@ -74,7 +91,7 @@ public class TextContent extends BaseContent{
 		}
 		//-------------------回复图文内容结束--------------------------
 		//-------------------回复音乐内容开始--------------------------
-		if(msgContent.equals("音乐")){
+		else if(msgContent.equals("音乐")){
 			music = new Music();
 			music.setDescription("音乐描述");
 			music.setHQMusicUrl("");
@@ -85,10 +102,10 @@ public class TextContent extends BaseContent{
 			//logger.debug("-----------------回复音频消息："+respMessage);
 		}
 		//-------------------回复音乐内容结束--------------------------
-		if(respMessage.equals("")){
-			respContent = "没有对应的请求消息！";
-			textMessage = getTextContent(requestMap, respContent);
-			respMessage = MessageUtil.textMessageToXml(textMessage);
+		
+		else{
+			keFuMessage = getKeFuContent(requestMap, transInfo);
+			respMessage = MessageUtil.keFuMessageToXml(keFuMessage);
 		}
 		return respMessage;
 	}
@@ -97,7 +114,7 @@ public class TextContent extends BaseContent{
 			requestMap.put("FromUserName","MyServer");
 			requestMap.put("ToUserName","shao");
 			requestMap.put("MsgType","text");
-			requestMap.put("Content","定点发送");
+			requestMap.put("Content","sdfdf");
 			TextContent textContent = new TextContent();
 			System.out.println("输出：");
 			System.out.println( textContent.getContent(requestMap));

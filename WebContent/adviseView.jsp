@@ -20,6 +20,7 @@
 	 		<font class="font_orange_title">意见建议</font>
 	 	</div>
 	 	<div class="advise_content">
+	 	openid:<input  name="openid"><br/>
 	 	<textarea class="font_textarea_content" id="advise_textarea" name="advise" >点击输入您的意见和建议</textarea>
 	 	</div>
 	 	<div class="advise_submit" style="">
