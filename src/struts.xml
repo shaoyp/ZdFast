@@ -10,5 +10,9 @@
 	    <action name="advise" class="com.zdaq.advise.action.AdviseAction" method="insertAdvise">
 	        <result>ok.jsp</result>
 	    </action>
+	    <!-- 团购 -->
+	    <action name="group" class="com.zdaq.group.action.GroupAction" method="execute">
+	        <result>groupView.jsp</result>
+	    </action>
 	</package>
 </struts>

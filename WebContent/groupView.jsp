@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +27,9 @@
 	 				<font>&#65509;</font><font class="font_group_normalprice">6888</font> 
 	 			</div>
 	 			<div class="group_price_right right">
+	 				<form action="">
 	 				<img alt="" src="images/group/group.png"/>
+	 				</form>
 	 			</div>
 	 		</div>
 	 		<div class="group_price_div">
@@ -52,6 +55,8 @@
 	 			</div>
 	 	</div>
 	 </div>
+	 openid:<s:property value="openid"/><br/>
+	 token:<s:property value="access_token"/>
 	<script src="js/jquery.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/less.js" type="text/javascript"></script>

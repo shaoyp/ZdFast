@@ -55,7 +55,8 @@ public class AdviseAction extends BaseAction{
 		String jsonSend = "{\"touser\":\""+openid+"\",\"msgtype\":\"text\",\"text\":{\"content\":\"您好，有什么可以帮助你的？\"}}";
 		// 调用接口创建菜单
 		JSONObject jsonObject = WeixinUtil.httpRequest(url, "POST", jsonSend);
-
+		System.out.println("json:" + jsonObject);
+		logger.info("json:" + jsonObject);
 		if (null != jsonObject) {
 			if (0 != jsonObject.getInt("errcode")) {
 				result = jsonObject.getInt("errcode");
