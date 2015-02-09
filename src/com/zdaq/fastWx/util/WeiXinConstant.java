@@ -38,7 +38,7 @@ public class WeiXinConstant {
 	public final static String MENU_TYPE = "click";
 	public final static String MENU_TYPE_VIEW = "view";
 	//----------------------------------------------------------------
-	public final static String PROJECT_NAME = "/";
+	public final static String PROJECT_NAME = "";
 	//第一个一级菜单  名字
 	public final static String MENU1_PARENT_NAME = "上岗通";
 	// 第一个一级菜单 第一个子菜单 名字
@@ -79,10 +79,12 @@ public class WeiXinConstant {
 	// 第二个一级菜单 第一个子编码 名字
 	public final static String MENU2_CHILDREN1_KEY = "21";
 	// 第二个一级菜单 第一个子菜单 URL
+	//访问地址  http://www.z-aq.com/group.action
+	public final static String URL = "http%3a%2f%2fwww.z-aq.com%2fgroup.action";
 	public final static String MENU2_CHILDREN1_URL = 
 			"https://open.weixin.qq.com/connect/oauth2/authorize?"
 					+ "appid=" + APPID + "&"
-					+ "redirect_uri= " + "http://www.wechat68.com/Javen/group.action" + "&"
+					+ "redirect_uri= " + URL + "&"
 					+ "response_type=code&"
 					+ "scope=" + "snsapi_base" + "&"
 					+ "state=" + 123 + "#wechat_redirect";
