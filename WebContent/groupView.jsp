@@ -9,9 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>我要“团”</title>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet/less" type="text/css" href="less/groupView.less">
-<link rel="stylesheet/less" type="text/css" href="less/main.less">
-<!-- <link href="css/groupView.css" rel="stylesheet"> -->
+<!-- <link rel="stylesheet/less" type="text/css" href="less/groupView.less">
+<link rel="stylesheet/less" type="text/css" href="less/main.less"> -->
+<link href="css/groupView.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet"> 
 
 </head>
 <body>

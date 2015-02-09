@@ -38,7 +38,7 @@ public class WeiXinConstant {
 	public final static String MENU_TYPE = "click";
 	public final static String MENU_TYPE_VIEW = "view";
 	//----------------------------------------------------------------
-	public final static String PROJECT_NAME = "";
+	public final static String PROJECT_NAME = "www.z-aq.com/";
 	//第一个一级菜单  名字
 	public final static String MENU1_PARENT_NAME = "上岗通";
 	// 第一个一级菜单 第一个子菜单 名字
@@ -46,31 +46,31 @@ public class WeiXinConstant {
 	// 第一个一级菜单 第一个子编码 名字
 	public final static String MENU1_CHILDREN1_KEY = "11";
 	// 第一个一级菜单 第一个子菜单 URL
-	public final static String MENU1_CHILDREN1_URL = PROJECT_NAME + "userReviews.jsp";
+	public final static String MENU1_CHILDREN1_URL = PROJECT_NAME + "userReviews.html";
 	// 第一个一级菜单 第二个子菜单 名字
 	public final static String MENU1_CHILDREN2_NAME = "上岗通展示";
 	// 第一个一级菜单 第二个子编码 名字
 	public final static String MENU1_CHILDREN2_KEY = "12";
 	// 第一个一级菜单 第二个子菜单 URL
-	public final static String MENU1_CHILDREN2_URL = PROJECT_NAME + "prodView.jsp";
+	public final static String MENU1_CHILDREN2_URL = PROJECT_NAME + "360view.html";
 	// 第一个一级菜单 第三个子菜单 名字
 	public final static String MENU1_CHILDREN3_NAME = "配套APP";
 	// 第一个一级菜单 第三个子编码 名字
 	public final static String MENU1_CHILDREN3_KEY = "13";
 	// 第一个一级菜单 第三个子菜单 URL
-	public final static String MENU1_CHILDREN3_URL = PROJECT_NAME + "appView.jsp";
+	public final static String MENU1_CHILDREN3_URL = PROJECT_NAME + "appView.html";
 	// 第一个一级菜单 第四个子菜单 名字
 	public final static String MENU1_CHILDREN4_NAME = "管理平台";
 	// 第一个一级菜单 第四个子编码 名字
 	public final static String MENU1_CHILDREN4_KEY = "14";
 	// 第一个一级菜单 第四个子菜单 URL
-	public final static String MENU1_CHILDREN4_URL = PROJECT_NAME + "pcView.jsp";
+	public final static String MENU1_CHILDREN4_URL = PROJECT_NAME + "pcView.html";
 	// 第一个一级菜单 第五个子菜单 名字
 	public final static String MENU1_CHILDREN5_NAME = "使用说明";
 	// 第一个一级菜单 第五个子编码 名字
 	public final static String MENU1_CHILDREN5_KEY = "15";
 	// 第一个一级菜单 第五个子菜单 URL
-	public final static String MENU1_CHILDREN5_URL = PROJECT_NAME + "manualView.jsp";
+	public final static String MENU1_CHILDREN5_URL = PROJECT_NAME + "manualView.html";
 	//----------------------------------------------------------------
 	//第二个一级菜单  名字
 	public final static String MENU2_PARENT_NAME = "快速订购";
@@ -99,7 +99,7 @@ public class WeiXinConstant {
 	// 第二个一级菜单 第三个子编码 名字
 	public final static String MENU2_CHILDREN3_KEY = "23";
 	// 第二个一级菜单 第三个子菜单 URL
-	public final static String MENU2_CHILDREN3_URL = PROJECT_NAME + "privateView.jsp";
+	public final static String MENU2_CHILDREN3_URL = PROJECT_NAME + "privateView.html";
 /*	// 第二个一级菜单 第四个子菜单 名字
 	public final static String MENU2_CHILDREN4_NAME = "照片里的故事";
 	// 第二个一级菜单 第四个子编码 名字
@@ -126,19 +126,19 @@ public class WeiXinConstant {
 	// 第三个一级菜单 第二个子编码 名字
 	public final static String MENU3_CHILDREN2_KEY = "32";
 	// 第三个一级菜单 第二个子菜单 URL
-	public final static String MENU3_CHILDREN2_URL = "http://www.baidu.com/";
+	public final static String MENU3_CHILDREN2_URL =  PROJECT_NAME + "question.html";
 	// 第三个一级菜单 第三个子菜单 名字
 	public final static String MENU3_CHILDREN3_NAME = "意见建议";
 	// 第三个一级菜单 第三个子编码 名字
 	public final static String MENU3_CHILDREN3_KEY = "33";
 	// 第三个一级菜单 第三个子菜单 URL
-	public final static String MENU3_CHILDREN3_URL = PROJECT_NAME + "adviseView.jsp";
+	public final static String MENU3_CHILDREN3_URL = PROJECT_NAME + "adviseView.html";
 	// 第三个一级菜单 第四个子菜单 名字
 	public final static String MENU3_CHILDREN4_NAME = "历史消息";
 	// 第三个一级菜单 第四个子编码 名字
 	public final static String MENU3_CHILDREN4_KEY = "34";
 	// 第三个一级菜单 第四个子菜单 URL
-	public final static String MENU3_CHILDREN4_URL = PROJECT_NAME + "historyView.jsp";
+	public final static String MENU3_CHILDREN4_URL = PROJECT_NAME + "historyView.html";
 /*	// 第三个一级菜单 第五个子菜单 名字
 	public final static String MENU3_CHILDREN5_NAME = "联系我们";
 	// 第三个一级菜单 第五个子编码 名字
